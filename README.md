@@ -29,11 +29,11 @@
  ```
  2. In code:
  
-	change
+ change
  ```
 	value = 1.0f;
  ```
-	to
+ to
  ```
 	utils::capture_rollback_state<rollback_type::*your_type*>([&] { value = 1.0f; });
  ```
@@ -54,11 +54,11 @@
  ```
 
 ## Rollback variables (see line 36 in runtime_rollback.h):
-	- Size/capacity of rollback states buffer:
+ - Size/capacity of rollback states buffer:
  ```
 	utils::rollback_states_capacity
  ```
- 	- Current rollback states count:
+ - Current rollback states count:
  ```
 	utils::rollback_states_capacity
  ```
